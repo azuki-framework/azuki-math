@@ -18,7 +18,7 @@
 
 	<groupId>org.azkfw</groupId>
 	<artifactId>azuki-math</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.3.0</version>
 	<packaging>jar</packaging>
 
 	<name>azuki-math</name>
@@ -36,7 +36,7 @@
 			<url>file://${project.build.directory}/../../maven-repository</url>
 		</repository>
 	</distributionManagement>
-
+	
 	<repositories>
 		<repository>
 			<id>AzukiFrameworkRepository</id>
@@ -55,6 +55,17 @@
 			<version>1.3.0</version>
 		</dependency>
 
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-math</artifactId>
+			<version>2.2</version>
+		</dependency>
+		<dependency>
+			<groupId>gov.nist.math</groupId>
+			<artifactId>jama</artifactId>
+			<version>1.0.3</version>
+		</dependency>
+		
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -81,11 +92,11 @@
 				<configuration>
 					<archive>
 						<manifestEntries>
-							<Built-By>AzukiFramework</Built-By>
+						    <Built-By>AzukiFramework</Built-By>
 						</manifestEntries>
 					</archive>
 				</configuration>
-			</plugin>
+			</plugin>			
 		</plugins>
 	</build>
 </project>
